@@ -31,7 +31,7 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 12px;
     color: #fff;
     margin: 15px 0 20px 0;
 }
@@ -122,11 +122,16 @@ body {
     text-decoration: none;
     border: 2px solid #3498db;
     border-radius: 8px;
-    color: darkblue;
-    background-color: #fff;
+    color: #fff;
+    background-color: transparent;
     cursor: pointer;
     font-weight: 700;
     font-family: 'Playfair Display', sans-serif;
+}
+
+#banner button:hover {
+    background-color: #fff;
+    color: #314959
 }
 
 #product1 {
@@ -199,7 +204,6 @@ body {
 
 #actionbanner {
     display: flex;
-    background: #314959;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -208,6 +212,7 @@ body {
     height: 50vh;
     background-size: cover;
     background-position: center-top;
+    width: 100%;
 }
 
 #actionbanner h2 {
@@ -224,7 +229,7 @@ body {
     color: rgb(235, 127, 206);
 }
 
-#actionbanner button {
+button.banners {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -238,6 +243,146 @@ body {
     font-weight: 700;
     font-family: 'Playfair Display', sans-serif;
 }
+
+button.banners:hover {
+    background: rgb(235, 127, 206);
+}
+
+#sm_banner {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #314959;
+}
+
+#sm_banner .banner-box {
+    display: flex;
+    background: #314959;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(img/shippingbanner1.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    min-width: 540px;
+}
+
+#sm_banner h2 {
+    padding-top: 10px;
+    padding-bottom:20px;
+    font-size: 30px;
+}
+
+#sm_banner h4 {
+    padding: 0;
+}
+
+#info_banner {
+    background: #282834;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#info_banner .infotext h4 {
+    padding: 5px 0;
+}
+
+#info_banner input {
+    height:2.5rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 96%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#info_banner .form {
+    display: flex;
+    width:35%;
+}
+
+#info_banner .form button {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #314959;
+    cursor: pointer;
+    font-weight: 700;
+    width:23%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer {
+    background-color: #282834;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .col_install {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+footer .follow i {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .col_install .row img {
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+footer .col_install img {
+    margin: 5px 0 5px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color:rgb(236, 158, 215);
+}
+
 
 
 
