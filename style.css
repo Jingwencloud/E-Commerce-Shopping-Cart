@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display', Arial, sans-serif;
 }
 
 h1 {
@@ -195,6 +195,48 @@ body {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+#actionbanner {
+    display: flex;
+    background: #314959;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(img/actionbanner.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center-top;
+}
+
+#actionbanner h2 {
+    padding: 10px;
+    color: #314959;
+    font-size: 30px;
+}
+
+#actionbanner h4 {
+    color: #314959;
+}
+
+#actionbanner h2 span {
+    color: rgb(235, 127, 206);
+}
+
+#actionbanner button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #314959;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 
