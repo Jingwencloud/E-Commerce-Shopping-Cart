@@ -305,13 +305,13 @@ button.banners:hover {
 
 #info_banner .form {
     display: flex;
-    width:35%;
+    width:40%;
 }
 
 #info_banner .form button {
     display: inline-block;
     white-space: nowrap;
-    padding: 10px 20px;
+    padding: 5px 5px;
     font-size: 13px;
     text-align: center;
     text-decoration: none;
