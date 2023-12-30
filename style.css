@@ -71,6 +71,10 @@ body {
     align-items: center;
 }
 
+#close {
+    display: none;
+}
+
 #navbar i {
     color: #fff;
 }
@@ -425,10 +429,28 @@ footer a:hover {
     }
 
     #close {
+        display: initial;
         position: absolute;
         top: 30px;
         left: 30px;
         color: #fff;
         font-size: 20px;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #product1 .product-container {
+        justify-content: center;
+    }
+
+    #actionbanner {
+        height: 30vh;
+    }
+
+    #sm_banner .banner-box {
+        min-width: 100%;
+        height: 25vh;
     }
 }
