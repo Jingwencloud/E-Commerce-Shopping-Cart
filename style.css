@@ -502,6 +502,12 @@ footer a:hover {
     }
 }
 
+@media (max-height: 370px) {
+    #banner h1{
+        font-size: 14px;
+    }
+}
+
 /* shopping cart */
 .cart-content {
     display: flex;
@@ -510,11 +516,13 @@ footer a:hover {
     position: fixed;
     top: 0;
     right: -300px;
-    height: 100vh;
+    min-height: 100vh;
     width: 300px;
     background-color: plum;
     padding: 80px 0 10px 0;
     transition: 0.3s;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 #cartcontent.active {
