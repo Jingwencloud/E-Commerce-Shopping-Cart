@@ -155,7 +155,7 @@ body {
 
 #product1 .product-container{
     display: flex;
-    gap: 25px;
+    align-items: flex-start;
     padding-top: 20px;
     flex-wrap: wrap;
 }
@@ -169,7 +169,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.01);
-    margin: 15px 0;
+    margin: 15px 10px;
     transition: 0.2s ease;
     position: relative;
 }
@@ -286,6 +286,7 @@ button.banners:hover {
 #sm_banner h2 {
     padding-top: 10px;
     padding-bottom:20px;
+    padding: 10px 5px 20px 5px;
     font-size: 30px;
 }
 
@@ -343,7 +344,7 @@ button.banners:hover {
 footer {
     background-color: #282834;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -355,7 +356,6 @@ footer .col {
 
 footer .col_install {
     display: flex;
-    
     flex-direction: column;
     align-items: flex-start;
 }
@@ -452,5 +452,42 @@ footer a:hover {
     #sm_banner .banner-box {
         min-width: 100%;
         height: 25vh;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #product1 .product {
+        width: 30%;
+        min-width: 380px;
+    }
+
+    #sm_banner .banner_box {
+        width: 100%;
+    }
+
+    #sm_banner {
+        padding: 15px;
+    }
+
+    #info_banner {
+        padding-left: 25px;
+    }
+
+    #info_banner .form {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        align-items:start;
+    }
+
+    footer .col {
+        padding-bottom: 20px;
+        width: 100%;
     }
 }
