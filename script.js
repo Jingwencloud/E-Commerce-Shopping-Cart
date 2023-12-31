@@ -1,7 +1,3 @@
-var bar = null;
-var nav = null;
-
-
 window.onload = function() {
     const bar = document.getElementById("bar");
     const nav= document.getElementById("navbar");
