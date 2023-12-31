@@ -85,7 +85,8 @@ body {
     position: relative;
 }
 
-#navbar li a {
+#navbar li a,
+#navbar li i {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -94,12 +95,16 @@ body {
 }
 
 #navbar li a:hover,
-#navbar li a.active {
+#navbar li i:hover,
+#navbar li a.active,
+#navbar li i.active {
     color: #088178;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar li i.active::after,
+#navbar li a:hover::after,
+#navbar li i:hover::after {
     content: "";
     width: 30%;
     height: 2px;
